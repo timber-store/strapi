@@ -1,0 +1,9 @@
+﻿{
+  "collectionName": "components_overview_suppliers",
+  "info": { "displayName": "Supplier" },
+  "attributes": {
+    "text": { "type": "text", "required": true },
+    "linkText": { "type": "string" },
+    "linkHref": { "type": "string" }
+  }
+}

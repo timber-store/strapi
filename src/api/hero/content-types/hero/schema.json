@@ -1,0 +1,53 @@
+﻿{
+  "kind": "singleType",
+  "collectionName": "hero",
+  "info": {
+    "displayName": "Hero",
+    "singularName": "hero",
+    "pluralName": "heroes"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "subcopyShort": {
+      "type": "text"
+    },
+    "subcopyLong": {
+      "type": "text"
+    },
+    "ctaLabelDesktop": {
+      "type": "string"
+    },
+    "ctaLabelMobile": {
+      "type": "string"
+    },
+    "photoCredit": {
+      "type": "string"
+    },
+    "photoCreditUrl": {
+      "type": "string"
+    },
+    "sectionBgColor": {
+      "type": "string"
+    },
+    "desktopImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

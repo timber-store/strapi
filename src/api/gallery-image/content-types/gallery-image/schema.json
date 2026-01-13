@@ -1,0 +1,29 @@
+﻿{
+  "kind": "collectionType",
+  "collectionName": "gallery_images",
+  "info": {
+    "displayName": "Gallery Image",
+    "singularName": "gallery-image",
+    "pluralName": "gallery-images"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "imageSmall": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

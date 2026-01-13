@@ -1,0 +1,12 @@
+﻿{
+  "collectionName": "components_overview_pricing_tiers",
+  "info": { "displayName": "Pricing Tier" },
+  "attributes": {
+    "heading": { "type": "string", "required": true },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "overview.pricing-item"
+    }
+  }
+}

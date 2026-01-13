@@ -1,0 +1,17 @@
+﻿{
+  "kind": "singleType",
+  "collectionName": "gallery",
+  "info": {
+    "displayName": "Gallery",
+    "singularName": "gallery",
+    "pluralName": "galleries"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sectionBgColor": {
+      "type": "string"
+    }
+  }
+}

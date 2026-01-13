@@ -1,0 +1,72 @@
+﻿{
+  "data": {
+    "title": "Overview",
+    "pricingHeading": "Pricing",
+    "infoHeading": "Need to know",
+    "suppliersHeading": "Suppliers",
+    "pricingTiers": [
+      {
+        "heading": "Ceremony only (2 hours)",
+        "items": [
+          { "label": "Mon - Thu", "value": "Aœ1,700" },
+          { "label": "Fri - Sun", "value": "Aœ2,000" }
+        ]
+      },
+      {
+        "heading": "Extended option (4 hours)",
+        "items": [
+          { "label": "Mon - Thu", "value": "Aœ2,050" },
+          { "label": "Fri - Sun", "value": "Aœ2,350" },
+          {
+            "label": "Adds",
+            "value": "2 hours for drinks and nibbles (buffet-style, mingling)"
+          }
+        ]
+      }
+    ],
+    "pricingNotes": [
+      "*Additional costs for 4 hour slot: Staff fees + drinks and nibbles will be quoted separately from the hire fee after booking, (subject to the requirements of your event)",
+      "**All hire fees above include event coordinator, chairs, lighting, heating, over head floral decorations, and mics for vows/speeches."
+    ],
+    "needToKnow": [
+      { "label": "Licensed for marriage", "value": "Yes" },
+      { "label": "Ceremony Capacity", "value": "55" },
+      { "label": "Wedding receptions", "value": "Yes - (casual buffet style drinks and nibbles only)" },
+      { "label": "Onsite catering", "value": "Yes" },
+      { "label": "Offsite catering", "value": "Mon - Thu only" },
+      { "label": "Exclusivity", "value": "Yes" },
+      { "label": "Child friendly", "value": "Yes" },
+      { "label": "Licensed until", "value": "10.30pm" },
+      { "label": "Music", "value": "Yes (Acoustic only)" },
+      { "label": "Local transport", "value": "Yes, London Bridge & Bermondsey" },
+      { "label": "Disabled facilities", "value": "Yes" },
+      { "label": "Pets friendly", "value": "Yes" },
+      { "label": "Access and parking", "value": "Limited parking, drop off points" },
+      { "label": "Accommodation", "value": "No (but local hotels available)" },
+      { "label": "Confetti", "value": "Yes (dried, organic flowers only)" }
+    ],
+    "notes": [
+      "For wedding ceremonies, you will need to get in touch with Southwark Council to organise your own registrar.",
+      "For weekend, day-time celebrations, please note that Maltby Street Market will be open all day."
+    ],
+    "suppliers": [
+      {
+        "text": "As someone wise once said: \"It's the little details that are vital. Little things make big things happen.\""
+      },
+      {
+        "text": "We have some recommended suppliers that we work with, to bring those special elements alive on your big day or event. It's an offering that will grow with time, as we host more wedding ceremonies."
+      },
+      {
+        "text": "Jemima in the woods is our resident on-site florist who is a super talented and lovely human, allowing the whole floral process to be seamless.",
+        "linkText": "Jemima in the woods",
+        "linkHref": "https://www.instagram.com/jemimainthewoods/"
+      },
+      {
+        "text": "Late night destination: MALT (UK craft beer & cocktail bar available for late night private hire)",
+        "linkText": "MALT",
+        "linkHref": "https://www.instagram.com/malt.maltby/"
+      },
+      { "text": "Musicians, Cake makers, Photographers: coming soon" }
+    ]
+  }
+}

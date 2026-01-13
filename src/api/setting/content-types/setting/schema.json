@@ -1,0 +1,29 @@
+﻿{
+  "kind": "singleType",
+  "collectionName": "setting",
+  "info": {
+    "displayName": "Setting",
+    "singularName": "setting",
+    "pluralName": "settings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "headingSetting": {
+      "type": "string"
+    },
+    "headingVibe": {
+      "type": "string"
+    },
+    "sectionBgColor": {
+      "type": "string"
+    },
+    "settingCopy": {
+      "type": "json"
+    },
+    "vibeCopy": {
+      "type": "json"
+    }
+  }
+}

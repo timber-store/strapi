@@ -1,0 +1,65 @@
+﻿{
+  "kind": "singleType",
+  "collectionName": "overview",
+  "info": {
+    "displayName": "Overview",
+    "singularName": "overview",
+    "pluralName": "overviews"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sectionBgColor": {
+      "type": "string"
+    },
+    "pricingHeading": {
+      "type": "string"
+    },
+    "infoHeading": {
+      "type": "string"
+    },
+    "suppliersHeading": {
+      "type": "string"
+    },
+    "pricingIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "infoIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "suppliersIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "pricingTiers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "overview.pricing-tier"
+    },
+    "pricingNotes": {
+      "type": "json"
+    },
+    "needToKnow": {
+      "type": "component",
+      "repeatable": true,
+      "component": "overview.label-value"
+    },
+    "notes": {
+      "type": "json"
+    },
+    "suppliers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "overview.supplier"
+    }
+  }
+}

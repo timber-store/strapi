@@ -1,0 +1,28 @@
+﻿{
+  "kind": "singleType",
+  "collectionName": "team",
+  "info": {
+    "displayName": "Team",
+    "singularName": "team",
+    "pluralName": "teams"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sectionBgColor": {
+      "type": "string"
+    },
+    "copy": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

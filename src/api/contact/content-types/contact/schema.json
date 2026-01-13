@@ -1,0 +1,47 @@
+﻿{
+  "kind": "singleType",
+  "collectionName": "contact",
+  "info": {
+    "displayName": "Contact",
+    "singularName": "contact",
+    "pluralName": "contacts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "email": {
+      "type": "string"
+    },
+    "instagramUrl": {
+      "type": "string"
+    },
+    "instagramHandle": {
+      "type": "string"
+    },
+    "nearestTube": {
+      "type": "string"
+    },
+    "busRoutes": {
+      "type": "string"
+    },
+    "mapNote": {
+      "type": "text"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "sectionBgColor": {
+      "type": "string"
+    }
+  }
+}
