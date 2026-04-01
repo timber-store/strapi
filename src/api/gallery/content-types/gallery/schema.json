@@ -1,4 +1,4 @@
-﻿{
+{
   "kind": "singleType",
   "collectionName": "gallery",
   "info": {
@@ -9,9 +9,20 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "sectionBgColor": {
       "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

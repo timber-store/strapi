@@ -510,6 +510,9 @@ export interface ApiGalleryGallery extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
