@@ -40,6 +40,25 @@ Strapi gives you many possible deployment options for your project including [St
 yarn strapi deploy
 ```
 
+### Persistent media on DigitalOcean
+
+Production uploads are stored in DigitalOcean Spaces when `DO_SPACE_BUCKET` is
+configured. Before deploying, add the following encrypted environment variables
+to the DigitalOcean Strapi app:
+
+- `DO_SPACE_ACCESS_KEY_ID`
+- `DO_SPACE_SECRET_ACCESS_KEY`
+- `DO_SPACE_BUCKET` (currently `timber-store`)
+- `DO_SPACE_REGION` (currently `ams3`)
+- `DO_SPACE_ENDPOINT` (currently `https://ams3.digitaloceanspaces.com`)
+- `DO_SPACE_CDN_URL` (optional; defaults to `https://timber-store.ams3.cdn.digitaloceanspaces.com`)
+- `DO_SPACE_ROOT_PATH` (optional; defaults to `strapi`)
+
+The access key must be able to list the Space and create, read, and delete its
+objects. Existing records whose provider is `local` are not migrated
+automatically; re-upload or migrate those assets after this configuration is
+deployed.
+
 ## 📚 Learn more
 
 - [Resource center](https://strapi.io/resource-center) - Strapi resource center.
