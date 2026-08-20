@@ -441,12 +441,14 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    bodyTextColorOverride: Schema.Attribute.String;
     busRoutes: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     email: Schema.Attribute.String;
     heading: Schema.Attribute.String;
+    headingColorOverride: Schema.Attribute.String;
     instagramHandle: Schema.Attribute.String;
     instagramUrl: Schema.Attribute.String;
     intro: Schema.Attribute.Text;
@@ -513,9 +515,11 @@ export interface ApiGalleryGallery extends Struct.SingleTypeSchema {
     backgroundImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    bodyTextColorOverride: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    headingColorOverride: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -541,12 +545,14 @@ export interface ApiHeroHero extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    bodyTextColorOverride: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     ctaLabelDesktop: Schema.Attribute.String;
     ctaLabelMobile: Schema.Attribute.String;
     desktopImage: Schema.Attribute.Media<'images'>;
+    headingColorOverride: Schema.Attribute.String;
     headline: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::hero.hero'> &
@@ -559,6 +565,8 @@ export interface ApiHeroHero extends Struct.SingleTypeSchema {
     sectionBgColor: Schema.Attribute.String;
     subcopyLong: Schema.Attribute.Text;
     subcopyShort: Schema.Attribute.Text;
+    textPanelBgColor: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'#0f0f0f'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -576,9 +584,11 @@ export interface ApiOverviewOverview extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    bodyTextColorOverride: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    headingColorOverride: Schema.Attribute.String;
     infoHeading: Schema.Attribute.String;
     infoIcon: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -616,9 +626,11 @@ export interface ApiSettingSetting extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    bodyTextColorOverride: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    headingColorOverride: Schema.Attribute.String;
     headingSetting: Schema.Attribute.String;
     headingVibe: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -648,10 +660,12 @@ export interface ApiTeamTeam extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    bodyTextColorOverride: Schema.Attribute.String;
     copy: Schema.Attribute.JSON;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    headingColorOverride: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::team.team'> &
@@ -710,9 +724,11 @@ export interface ApiTestimonialsPageTestimonialsPage
     backgroundImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    bodyTextColorOverride: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    headingColorOverride: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -721,6 +737,36 @@ export interface ApiTestimonialsPageTestimonialsPage
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     sectionBgColor: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiThemeTheme extends Struct.SingleTypeSchema {
+  collectionName: 'themes';
+  info: {
+    displayName: 'Theme';
+    pluralName: 'themes';
+    singularName: 'theme';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accentTextColor: Schema.Attribute.String;
+    bodyTextColor: Schema.Attribute.String;
+    buttonBackgroundColor: Schema.Attribute.String;
+    buttonTextColor: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    headingColor: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::theme.theme'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    testimonialSignatureColor: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1246,6 +1292,7 @@ declare module '@strapi/strapi' {
       'api::team.team': ApiTeamTeam;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::testimonials-page.testimonials-page': ApiTestimonialsPageTestimonialsPage;
+      'api::theme.theme': ApiThemeTheme;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

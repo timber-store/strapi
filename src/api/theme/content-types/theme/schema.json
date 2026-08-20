@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "themes",
+  "info": {
+    "displayName": "Theme",
+    "singularName": "theme",
+    "pluralName": "themes"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "headingColor": {
+      "type": "string"
+    },
+    "bodyTextColor": {
+      "type": "string"
+    },
+    "accentTextColor": {
+      "type": "string"
+    },
+    "buttonBackgroundColor": {
+      "type": "string"
+    },
+    "buttonTextColor": {
+      "type": "string"
+    },
+    "testimonialSignatureColor": {
+      "type": "string"
+    }
+  }
+}

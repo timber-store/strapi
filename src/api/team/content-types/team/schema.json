@@ -16,6 +16,12 @@
     "sectionBgColor": {
       "type": "string"
     },
+    "headingColorOverride": {
+      "type": "string"
+    },
+    "bodyTextColorOverride": {
+      "type": "string"
+    },
     "copy": {
       "type": "json"
     },

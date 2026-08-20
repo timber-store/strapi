@@ -14,6 +14,12 @@
     "sectionBgColor": {
       "type": "string"
     },
+    "headingColorOverride": {
+      "type": "string"
+    },
+    "bodyTextColorOverride": {
+      "type": "string"
+    },
     "backgroundImage": {
       "type": "media",
       "multiple": false,
