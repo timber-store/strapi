@@ -20,6 +20,12 @@
     "bodyTextColorOverride": {
       "type": "string"
     },
+    "closeTextColor": {
+      "type": "string"
+    },
+    "overlayColor": {
+      "type": "string"
+    },
     "backgroundImage": {
       "type": "media",
       "multiple": false,

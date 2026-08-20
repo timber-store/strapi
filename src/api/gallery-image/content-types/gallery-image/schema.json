@@ -15,11 +15,6 @@
       "multiple": false,
       "allowedTypes": ["images"]
     },
-    "imageSmall": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": ["images"]
-    },
     "thumbnail": {
       "type": "media",
       "multiple": false,

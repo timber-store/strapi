@@ -20,6 +20,9 @@
     "bodyTextColorOverride": {
       "type": "string"
     },
+    "cardBgColor": {
+      "type": "string"
+    },
     "backgroundImage": {
       "type": "media",
       "multiple": false,
