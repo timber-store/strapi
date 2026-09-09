@@ -30,6 +30,11 @@
     },
     "vibeCopy": {
       "type": "json"
+    },
+    "venueImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
     }
   }
 }
