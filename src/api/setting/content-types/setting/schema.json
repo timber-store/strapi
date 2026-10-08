@@ -13,9 +13,6 @@
     "headingSetting": {
       "type": "string"
     },
-    "headingVibe": {
-      "type": "string"
-    },
     "sectionBgColor": {
       "type": "string"
     },

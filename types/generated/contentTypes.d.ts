@@ -633,7 +633,6 @@ export interface ApiSettingSetting extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     headingColorOverride: Schema.Attribute.String;
     headingSetting: Schema.Attribute.String;
-    headingVibe: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
