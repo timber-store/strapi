@@ -28,9 +28,6 @@
     "settingCopy": {
       "type": "json"
     },
-    "vibeCopy": {
-      "type": "json"
-    },
     "venueImage": {
       "type": "media",
       "multiple": false,

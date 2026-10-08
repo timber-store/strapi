@@ -486,7 +486,6 @@ export interface ApiGalleryImageGalleryImage
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     image: Schema.Attribute.Media<'images'>;
-    imageSmall: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -516,6 +515,7 @@ export interface ApiGalleryGallery extends Struct.SingleTypeSchema {
       'images' | 'files' | 'videos' | 'audios'
     >;
     bodyTextColorOverride: Schema.Attribute.String;
+    closeTextColor: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -526,6 +526,7 @@ export interface ApiGalleryGallery extends Struct.SingleTypeSchema {
       'api::gallery.gallery'
     > &
       Schema.Attribute.Private;
+    overlayColor: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     sectionBgColor: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -645,7 +646,7 @@ export interface ApiSettingSetting extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    vibeCopy: Schema.Attribute.JSON;
+    venueImage: Schema.Attribute.Media<'images'>;
   };
 }
 
@@ -671,6 +672,7 @@ export interface ApiTeamTeam extends Struct.SingleTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::team.team'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    secondaryImage: Schema.Attribute.Media<'images'>;
     sectionBgColor: Schema.Attribute.String;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -725,6 +727,7 @@ export interface ApiTestimonialsPageTestimonialsPage
       'images' | 'files' | 'videos' | 'audios'
     >;
     bodyTextColorOverride: Schema.Attribute.String;
+    cardBgColor: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
